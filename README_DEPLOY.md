@@ -1,6 +1,6 @@
 # Deployment Instructions
 
-This project has been dockerized for easy deployment.
+This project has been dockerized for easy deployment using a simple Node.js static server.
 
 ## Prerequisites
 
@@ -30,7 +30,6 @@ This project has been dockerized for easy deployment.
 
 ## Files Created
 
-- `Dockerfile`: Multi-stage build (Node.js build -> Nginx serve).
+- `Dockerfile`: Single-stage build using `serve` to host the static files.
 - `docker-compose.yml`: Orchestration file to run the container.
-- `nginx.conf`: Nginx configuration for the SPA.
 - `.dockerignore`: Files to exclude from the build context.
