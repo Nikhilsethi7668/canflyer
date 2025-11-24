@@ -1,0 +1,9 @@
+services:
+  canflyer-delivery:
+    build:
+      context: .
+      args:
+        - GEMINI_API_KEY=${GEMINI_API_KEY}
+    ports:
+      - "30067:80"
+    restart: always
